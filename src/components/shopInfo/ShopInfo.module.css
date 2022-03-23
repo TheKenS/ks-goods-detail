@@ -1,0 +1,11 @@
+.shop-info-container {
+    background: rgb(246, 246, 246);
+    padding: 2px 0;
+}
+
+.shop-info-wrapper {
+    width: 100%;
+    background: #fff;
+    padding: 17px 19px 16px;
+    margin: 8px 0;
+}

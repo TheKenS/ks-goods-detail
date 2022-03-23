@@ -1,0 +1,13 @@
+.goods-detail-typography {
+    padding: 10px 19px;
+}
+.goods-detail-typography .goods-detail-describe {
+    font-family: monospace,monospace;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.goods-detail-imgs img {
+    width: 100vw;
+    object-fit: cover;
+}

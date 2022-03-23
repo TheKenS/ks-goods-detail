@@ -1,24 +1,22 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.module.css";
+import styles from "./App.module.css";
+import { Carousel, GoodsInfo, ShopInfo, GoodsDetail } from "@/components";
+
+const imgSrc = `https://p1.eckwai.com/ufile/adsocial/1dc759e9-7c62-4ca8-9444-11891bdcbaa1.jpg`;
+const imgSrc2 = `https://p1.eckwai.com/ufile/adsocial/1063e77d-5430-4747-a4b5-963b6ef41941.jpg`;
+const imgs = [imgSrc, imgSrc2];
+
+const detailImgSrc = `/mock/imgs/detail1.jpg`;
+const detailImgSrc2 = `/mock/imgs/detail2.jpg`;
+const detailImgSrc3 = `/mock/imgs/detail3.jpg`;
+const detailImgs = [detailImgSrc, detailImgSrc2, detailImgSrc3];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.App}>
+      <Carousel imgs={imgs} />
+      <GoodsInfo></GoodsInfo>
+      <ShopInfo></ShopInfo>
+      <GoodsDetail detailImgs={detailImgs}></GoodsDetail>
     </div>
   );
 }

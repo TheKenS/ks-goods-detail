@@ -1,0 +1,122 @@
+.goods-info-container {
+  padding: 11px 19px 9px 19px;
+}
+
+.goods-info-price {
+  display: flex;
+  align-items: center;
+}
+
+.goods-info-price-current {
+  height: 25px;
+  color: #fe3666;
+  display: flex;
+  align-items: center;
+}
+
+.goods-info-price-current span:nth-child(1) {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.goods-info-price-current span:nth-child(2) {
+  font-weight: 550;
+  font-size: 24px;
+  font-family: AlteDIN1451Mittelschrift, DIN, sans-serif-condensed;
+  letter-spacing: -1px;
+}
+
+.goods-info-price-discount {
+  height: 25px;
+  font-weight: 700;
+  background: #fe3666;
+  color: #fff;
+  border-radius: 25px;
+  font-family: PingFangSC, PingFangSC-Regular;
+  padding: 0 6px 0 8px;
+  margin-left: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.goods-info-price-discount span:nth-child(1) {
+  font-size: 12px;
+}
+
+.goods-info-price-discount span:nth-child(2) {
+  font-size: 16px;
+  margin-right: -1px;
+}
+
+.goods-info-price-discount span:nth-child(3) {
+  font-size: 20px;
+  letter-spacing: -1px;
+  font-family: AlteDIN1451Mittelschrift, DIN, sans-serif-condensed;
+  margin-right: 2px;
+}
+
+.goods-info-price-discount i {
+  font-size: 3px;
+  transform: scale(0.9, 0.9);
+}
+
+.goods-info-container .goods-info-title {
+  margin: 6px 0 4px;
+}
+
+.goods-info-divider {
+  margin: 7px 0;
+  width: calc(100vw - 19px);
+}
+
+.goods-info-serve {
+  font-size: 14px;
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goods-info-serve-item {
+  margin-right: 8px;
+}
+
+.goods-info-serve-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 330px;
+  overflow: hidden;
+  height: 22px;
+}
+
+.goods-info-serve-item:not(:first-child) span::before {
+  content: "\B7";
+  margin-right: 8px;
+}
+
+.goods-info-serve i {
+  font-size: 3px;
+  transform: scale(0.9, 0.9);
+}
+
+.goods-info-delivery {
+  font-size: 14px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 22px;
+  overflow: hidden;
+}
+
+.goods-info-delivery-item {
+  margin-right: 8px;
+}
+
+.goods-info-delivery-item:not(:first-child) span::before {
+  content: "|";
+  margin-right: 8px;
+  color: #94959E;
+}
+
