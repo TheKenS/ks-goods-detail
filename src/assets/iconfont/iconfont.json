@@ -6,11 +6,32 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "172701",
+      "name": "个人",
+      "font_class": "geren",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
       "icon_id": "630094",
       "name": "向右箭头",
       "font_class": "xiangyoujiantou",
       "unicode": "e65f",
       "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "1638194",
+      "name": "店铺",
+      "font_class": "dianpu",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "5460560",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "ec2e",
+      "unicode_decimal": 60462
     }
   ]
 }

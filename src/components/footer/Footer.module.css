@@ -1,0 +1,29 @@
+.footer-container {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-content{
+    width: 52vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-button-buy {
+    font-size: 14px;
+    font-weight: 500;
+    width: 172px;
+    height: 42px;
+    background: #fe3666;
+    border-radius: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

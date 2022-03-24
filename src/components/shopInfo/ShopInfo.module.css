@@ -1,11 +1,107 @@
 .shop-info-container {
-    background: rgb(246, 246, 246);
-    padding: 2px 0;
+  background: rgb(246, 246, 246);
+  padding: 2px 0;
 }
 
 .shop-info-wrapper {
-    width: 100%;
-    background: #fff;
-    padding: 17px 19px 16px;
-    margin: 8px 0;
+  width: 100%;
+  background: #fff;
+  padding: 17px 19px 16px;
+  margin: 8px 0;
+}
+
+.shop-info-header {
+  height: 46px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.shop-info-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.shop-info-header-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shop-info-name-container{
+    
+    padding-right: 10px;
+}
+
+.shop-info-name-container p {
+    overflow: hidden;
+    max-width: 200px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.shop-info-name {
+    font-size: 16px;
+    font-weight: 500;
+    /* flex: 0 1 auto; */
+    margin-bottom: 0;
+}
+
+.shop-info-amount {
+    font-size: 12px;
+    margin: 2px 0 0;
+}
+
+.shop-info-button {
+    font-size: 12px;
+    color: #fe3666;
+    padding: 5px 9px;
+    border: 1px solid #fe3666;
+    border-radius: 17px;
+    margin-right: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-info-content {
+    background: #f8f8f8;
+    border-radius: 8px;
+    padding: 13px 12px 12px;
+}
+
+.shop-info-stars-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.shop-info-stars-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+    margin-right: 8px;
+}
+
+.shop-info-content .shop-info-stars-wrapper .shop-info-stars {
+    color: rgb(255, 116, 41);
+    line-height: 10px;
+    transform-origin: 0;
+    transform: scale(0.5, 0.5);
+}
+
+.shop-info-content .shop-info-stars-wrapper .shop-info-stars li {
+    margin-right: 3px;
+}
+
+.shop-info-scores-wrapper {
+    margin-top: 3px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(156, 156, 156);
 }
