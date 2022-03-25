@@ -1,0 +1,96 @@
+.like-container {
+  font-weight: 700;
+  background: rgb(246, 246, 246);
+  width: 100%;
+}
+
+.like-top {
+  line-height: 40px;
+  text-align: center;
+}
+
+.like-container .like-top i {
+  color: red;
+  margin-right: 3px;
+}
+
+.like-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.like-list-item {
+  width: 48.5%;
+  background: #fff;
+  margin-bottom: 3px;
+  border-radius: 4px;
+}
+
+.like-list-img {
+  width: 100%;
+  padding-bottom: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.like-list-content {
+    padding: 5px;
+}
+
+.like-list-title {
+  font-size: 13px;
+}
+
+.like-list-icon {
+  font-size: 5px;
+  line-height: 18px;
+  padding: 0 3px;
+  display: inline-block;
+  background: blue;
+  color: #fff;
+  transform: scale(0.7);
+  border-radius: 3px;
+}
+
+.like-list-manjian {
+  display: inline-block;
+  font-size: 5px;
+  color: #fe3666;
+  border: 1px solid #fe3666;
+  border-radius: 3px;
+  padding: 0 3px;
+  transform: scale(0.7);
+  transform-origin: 0;
+}
+
+.like-list-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.like-list-price {
+  height: 25px;
+  color: #fe3666;
+}
+
+.like-list-price span:nth-child(1) {
+  font-size: 12px;
+}
+
+.like-list-price span:nth-child(2) {
+  font-weight: 550;
+  font-size: 20px;
+  font-family: AlteDIN1451Mittelschrift, DIN, sans-serif-condensed;
+  letter-spacing: -1px;
+}
+
+.like-list-sales {
+    display: flex;
+    align-items:flex-end;
+    font-size: 8px;
+    color: grey;
+    transform: scale(0.8);
+    transform-origin: bottom;
+}

@@ -7,10 +7,11 @@ import {
   ShopInfo,
   GoodsDetail,
   Footer,
+  LikeList,
 } from "./components";
 import { Spin } from "antd";
 import styles from "./GoodsDetailPage.module.css";
-import { getGoodsDetail } from "@/redux/goodsDetail/slice";
+import { getGoodsDetail, getLikes } from "@/redux/goodsDetail/slice";
 import { useSelector } from "@/redux/hooks";
 
 interface MatchParams {
@@ -25,9 +26,11 @@ export const GoodsDetailPage = () => {
   const { topInfo, shopInfo, details } = useSelector(
     (state) => state.goodsDetail.info
   );
+  const likes = useSelector((state) => state.goodsDetail.likes);
 
   useEffect(() => {
     dispatch(getGoodsDetail(params));
+    dispatch(getLikes({ goodsId: params.goodsId, pageCount: 0 }));
   }, [params]);
 
   if (loading) {
@@ -63,6 +66,7 @@ export const GoodsDetailPage = () => {
       <GoodsInfo {...goodsInfoProps}></GoodsInfo>
       <ShopInfo {...shopInfo}></ShopInfo>
       <GoodsDetail {...details}></GoodsDetail>
+      <LikeList goodsId={params.goodsId} {...likes} />
       <Footer />
     </div>
   );

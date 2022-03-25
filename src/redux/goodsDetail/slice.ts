@@ -24,6 +24,11 @@ interface GoodsDetailState {
       detailImgs: string[];
     };
   };
+  likes: {
+    isFetching: boolean;
+    pageCount: number;
+    items: any[];
+  };
 }
 
 const initialState: GoodsDetailState = {
@@ -50,6 +55,11 @@ const initialState: GoodsDetailState = {
       detailImgs: [],
     },
   },
+  likes: {
+    isFetching: false,
+    pageCount: 0,
+    items: [],
+  },
 };
 
 const headers = new Headers({
@@ -65,6 +75,20 @@ export const getGoodsDetail = createAsyncThunk(
       headers: headers,
     });
     const data = await response.json();
+
+    return data;
+  }
+);
+
+export const getLikes = createAsyncThunk(
+  "goods/likes",
+  async (params: { goodsId: string; pageCount: number }) => {
+    const response = await fetch("/mock/shopDetail/likes.json", {
+      method: "GET",
+      headers: headers,
+    });
+    const data = await response.json();
+    console.log("likesData", data);
 
     return data;
   }
@@ -89,6 +113,17 @@ export const goodsDetailSlice = createSlice({
     ) => {
       state.loading = false;
       state.error = action.payload;
+    },
+    [getLikes.pending.type]: (state) => {
+      state.likes.isFetching = true;
+    },
+    [getLikes.fulfilled.type]: (state, action) => {
+      state.likes.items = [...state.likes.items, ...action.payload];
+      state.likes.isFetching = false;
+      state.likes.pageCount = state.likes.pageCount + 1;
+    },
+    [getLikes.rejected.type]: (state, action: PayloadAction<string | null>) => {
+      state.likes.isFetching = false;
     },
   },
 });

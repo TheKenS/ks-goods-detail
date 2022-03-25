@@ -1,0 +1,26 @@
+[
+  {
+    "imgSrc": "/mock/imgs/like1.jpg",
+    "title": "《春季新品》潮流宽松连帽卫衣 1508",
+    "price": "109",
+    "sales": "23"
+  },
+  {
+    "imgSrc": "/mock/imgs/like2.jpg",
+    "title": "麦特优《非卖品》男士休闲裤 1027",
+    "price": "139",
+    "sales": "23"
+  },
+  {
+    "imgSrc": "/mock/imgs/like3.jpg",
+    "title": "《夏季新款》短袖t恤男夏季新款 2312",
+    "price": "89",
+    "sales": "23"
+  },
+  {
+    "imgSrc": "/mock/imgs/like4.jpg",
+    "title": "《夏季新款》麦特优短袖POLOt恤男 2312",
+    "price": "109",
+    "sales": "23"
+  }
+]
