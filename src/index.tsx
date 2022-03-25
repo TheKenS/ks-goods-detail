@@ -5,11 +5,13 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "antd/dist/antd.min.css";
 import "@/assets/iconfont/iconfont.css";
+import { Provider } from "react-redux";
+import rootStore from "@/redux/store";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={rootStore.store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById("root")
 );
 

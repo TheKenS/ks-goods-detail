@@ -1,3 +1,12 @@
+# 路由
+localhost:3000/goodsDetail/111
+
+# 数据
+mock本地路径 public/mock/shopDetail
+
+# 数据管理
+redux + rtk 管理
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

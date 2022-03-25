@@ -1,23 +1,31 @@
 import styles from "./ShopInfo.module.css";
 import { Rate } from "antd";
-import { Score } from "@/components";
+import { Score } from "../score";
 
-export const ShopInfo = () => {
+interface PropsType {
+  avatar: string;
+  shopName: string;
+  sales: string;
+  stars: number;
+  scores: { name: string; score: number }[];
+}
+
+export const ShopInfo: React.FC<PropsType> = ({
+  avatar,
+  shopName,
+  sales,
+  stars,
+  scores,
+}) => {
   return (
     <div className={styles["shop-info-container"]}>
       <div className={styles["shop-info-wrapper"]}>
         <div className={styles["shop-info-header"]}>
-          <img
-            className={styles["shop-info-avatar"]}
-            src="https://tx2.a.kwimgs.com/uhead/AB/2020/08/03/11/BMjAyMDA4MDMxMTQ2MzJfODMzMDkzOTVfMV9oZDQ0Xzg4Ng==_s.jpg"
-            alt=""
-          />
+          <img className={styles["shop-info-avatar"]} src={avatar} alt="" />
           <div className={styles["shop-info-header-right"]}>
             <div className={styles["shop-info-name-container"]}>
-              <p className={styles["shop-info-name"]}>
-                Sir东东的小店Sir东东的小店Sir东东的小店Sir东东的小店Sir东东的小店
-              </p>
-              <p className={styles["shop-info-amount"]}>总销量82件</p>
+              <p className={styles["shop-info-name"]}>{shopName}</p>
+              <p className={styles["shop-info-amount"]}>总销量{sales}件</p>
             </div>
             <div className={styles["shop-info-button"]}>
               <span>进店逛逛</span>
@@ -29,15 +37,18 @@ export const ShopInfo = () => {
             <div className={styles["shop-info-stars-title"]}>购物体验星级</div>
             <Rate
               disabled
-              value={3}
+              value={stars}
               className={`${styles["shop-info-stars"]}`}
             />
           </div>
           <div className={styles["shop-info-scores-wrapper"]}>
-            <Score name={"商品质量"} score={4.5} />
-            <Score name={"客服服务"} score={4.5} />
-            <Score name={"物流速度"} score={4.5} />
-            <Score name={"售后体验"} score={4.5} />
+            {scores.map((score, idx) => (
+              <Score
+                name={score.name}
+                score={score.score}
+                key={`shop-info-scores${idx}`}
+              />
+            ))}
           </div>
         </div>
       </div>

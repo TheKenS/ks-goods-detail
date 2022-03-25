@@ -1,0 +1,33 @@
+{
+  "topInfo": {
+    "topImgs": [
+      "https://p1.eckwai.com/ufile/adsocial/1dc759e9-7c62-4ca8-9444-11891bdcbaa1.jpg",
+      "https://p1.eckwai.com/ufile/adsocial/1063e77d-5430-4747-a4b5-963b6ef41941.jpg"
+    ],
+    "price": "228",
+    "discount": "226",
+    "title": "快手小店测试商品",
+    "serves": ["支持七天无理由退货", "急速退款", "已交保证金"],
+    "delivery": ["48小时内从北京市市辖区发货", "包邮"]
+  },
+  "shopInfo": {
+    "avatar": "https://tx2.a.kwimgs.com/uhead/AB/2020/08/03/11/BMjAyMDA4MDMxMTQ2MzJfODMzMDkzOTVfMV9oZDQ0Xzg4Ng==_s.jpg",
+    "shopName": "Sir东东的小店Sir东东的小店Sir东东的小店Sir东东的小店Sir东东的小店",
+    "sales": "82",
+    "stars": 3,
+    "scores": [
+      { "name": "商品质量", "score": 4.5 },
+      { "name": "客服服务", "score": 4.5 },
+      { "name": "物流速度", "score": 4.5 },
+      { "name": "售后体验", "score": 4.5 }
+    ]
+  },
+  "details": {
+    "title": "《春季新品》潮流宽松卫衣 1520",
+    "detailImgs": [
+      "/mock/imgs/detail1.jpg",
+      "/mock/imgs/detail2.jpg",
+      "/mock/imgs/detail3.jpg"
+    ]
+  }
+}

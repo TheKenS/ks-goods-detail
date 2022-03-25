@@ -2,16 +2,17 @@ import { Typography } from "antd";
 import styles from "./GoodsDetail.module.css";
 const { Title, Paragraph } = Typography;
 interface PropsType {
+  title: string;
   detailImgs: string[];
 }
 
-export const GoodsDetail = ({ detailImgs }) => {
+export const GoodsDetail: React.FC<PropsType> = ({ title, detailImgs }) => {
   return (
     <div>
       <Typography className={styles["goods-detail-typography"]}>
         <Title level={5}>商品详情</Title>
         <Paragraph className={styles["goods-detail-describe"]}>
-          《春季新品》潮流宽松卫衣 1520
+          {title}
         </Paragraph>
       </Typography>
       <div className={styles["goods-detail-imgs"]}>
